@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TubeBoost Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23 9.71a8.5 8.5 0 0 0-.91-4.13 2.92 2.92 0 0 0-1.72-1A78.36 78.36 0 0 0 12 4.27a78.45 78.45 0 0 0-8.34.3 2.87 2.87 0 0 0-1.46.74c-.9.83-1 2.25-1.1 3.45a48.29 48.29 0 0 0 0 6.48 47.92 47.92 0 0 0 .6 4.73c.15 1.65.4 3.29 1.05 3.83a2.87 2.87 0 0 0 1.46.74 78.45 78.45 0 0 0 8.34.3 78.36 78.36 0 0 0 8.37-.31 2.92 2.92 0 0 0 1.72-1A8.5 8.5 0 0 0 23 14.29c.17-1.53.17-3.2.17-4.58s0-3.05-.17-4.58zM8.8 15.74V8.26l7.13 3.74z"
+              fill="currentColor"
+            />
+          </svg>
+          <div>
+            <h1>TubeBoost Settings</h1>
+            <p>Customize your YouTube optimization experience</p>
+          </div>
+        </div>
+        <div class="version">v1.0.0</div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main">
+        <!-- General Settings -->
+        <section class="settings-section">
+          <h2>🎯 General Settings</h2>
+          <div class="settings-grid">
+            <div class="setting-item">
+              <div class="setting-info">
+                <label for="autoAnalyze">Auto-analyze videos</label>
+                <p>Automatically analyze videos when you visit YouTube pages</p>
+              </div>
+              <div class="setting-control">
+                <input type="checkbox" id="autoAnalyze" />
+                <label for="autoAnalyze" class="toggle"></label>
+              </div>
+            </div>
+
+            <div class="setting-item">
+              <div class="setting-info">
+                <label for="showSEOScore">Show SEO scores</label>
+                <p>Display SEO scores directly on YouTube videos</p>
+              </div>
+              <div class="setting-control">
+                <input type="checkbox" id="showSEOScore" />
+                <label for="showSEOScore" class="toggle"></label>
+              </div>
+            </div>
+
+            <div class="setting-item">
+              <div class="setting-info">
+                <label for="showTagSuggestions">Tag suggestions</label>
+                <p>Show recommended tags below video descriptions</p>
+              </div>
+              <div class="setting-control">
+                <input type="checkbox" id="showTagSuggestions" />
+                <label for="showTagSuggestions" class="toggle"></label>
+              </div>
+            </div>
+
+            <div class="setting-item">
+              <div class="setting-info">
+                <label for="showOptimizationHints">Optimization hints</label>
+                <p>Display optimization suggestions in the sidebar</p>
+              </div>
+              <div class="setting-control">
+                <input type="checkbox" id="showOptimizationHints" />
+                <label for="showOptimizationHints" class="toggle"></label>
+              </div>
+            </div>
+
+            <div class="setting-item">
+              <div class="setting-info">
+                <label for="notifications">Browser notifications</label>
+                <p>Receive notifications about optimization opportunities</p>
+              </div>
+              <div class="setting-control">
+                <input type="checkbox" id="notifications" />
+                <label for="notifications" class="toggle"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Advanced Settings -->
+        <section class="settings-section">
+          <h2>⚙️ Advanced Settings</h2>
+          <div class="settings-grid">
+            <div class="setting-item">
+              <div class="setting-info">
+                <label for="analysisDelay">Analysis delay (seconds)</label>
+                <p>Wait time before auto-analyzing videos</p>
+              </div>
+              <div class="setting-control">
+                <input
+                  type="range"
+                  id="analysisDelay"
+                  min="1"
+                  max="10"
+                  value="2"
+                />
+                <span id="analysisDelayValue">2s</span>
+              </div>
+            </div>
+
+            <div class="setting-item">
+              <div class="setting-info">
+                <label for="maxTagSuggestions">Maximum tag suggestions</label>
+                <p>Number of tags to suggest for videos</p>
+              </div>
+              <div class="setting-control">
+                <input
+                  type="range"
+                  id="maxTagSuggestions"
+                  min="5"
+                  max="20"
+                  value="10"
+                />
+                <span id="maxTagSuggestionsValue">10</span>
+              </div>
+            </div>
+
+            <div class="setting-item">
+              <div class="setting-info">
+                <label for="theme">Theme</label>
+                <p>Choose your preferred color theme</p>
+              </div>
+              <div class="setting-control">
+                <select id="theme">
+                  <option value="light">Light</option>
+                  <option value="dark">Dark</option>
+                  <option value="auto">Auto</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Data & Privacy -->
+        <section class="settings-section">
+          <h2>🔒 Data & Privacy</h2>
+          <div class="settings-grid">
+            <div class="setting-item">
+              <div class="setting-info">
+                <label for="saveAnalytics">Save analytics locally</label>
+                <p>Store video analysis data on your device</p>
+              </div>
+              <div class="setting-control">
+                <input type="checkbox" id="saveAnalytics" />
+                <label for="saveAnalytics" class="toggle"></label>
+              </div>
+            </div>
+
+            <div class="setting-item">
+              <div class="setting-info">
+                <label for="shareUsageData">Share anonymous usage data</label>
+                <p>Help improve TubeBoost by sharing usage statistics</p>
+              </div>
+              <div class="setting-control">
+                <input type="checkbox" id="shareUsageData" />
+                <label for="shareUsageData" class="toggle"></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="privacy-actions">
+            <button class="btn-secondary" id="exportData">
+              📤 Export Data
+            </button>
+            <button class="btn-danger" id="clearData">🗑️ Clear All Data</button>
+          </div>
+        </section>
+
+        <!-- Account -->
+        <section class="settings-section">
+          <h2>👤 Account</h2>
+          <div class="account-info">
+            <div class="account-status">
+              <div class="status-indicator free"></div>
+              <div class="status-details">
+                <h3>Free Plan</h3>
+                <p>Basic YouTube optimization tools with limited daily usage</p>
+              </div>
+            </div>
+            <button class="btn-primary" id="upgradePlan">
+              ⭐ Upgrade to Pro
+            </button>
+          </div>
+
+          <div class="usage-stats">
+            <h4>Today's Usage</h4>
+            <div class="usage-bars">
+              <div class="usage-item">
+                <span>Video Analysis</span>
+                <div class="usage-bar">
+                  <div
+                    class="usage-fill"
+                    style="width: 60%"
+                    data-usage="6/10"
+                  ></div>
+                </div>
+                <span class="usage-text">6/10</span>
+              </div>
+              <div class="usage-item">
+                <span>Keyword Research</span>
+                <div class="usage-bar">
+                  <div
+                    class="usage-fill"
+                    style="width: 30%"
+                    data-usage="3/10"
+                  ></div>
+                </div>
+                <span class="usage-text">3/10</span>
+              </div>
+              <div class="usage-item">
+                <span>Tag Generation</span>
+                <div class="usage-bar">
+                  <div
+                    class="usage-fill"
+                    style="width: 80%"
+                    data-usage="8/10"
+                  ></div>
+                </div>
+                <span class="usage-text">8/10</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-actions">
+          <button class="btn-secondary" id="resetSettings">
+            🔄 Reset to Defaults
+          </button>
+          <div class="footer-buttons">
+            <button class="btn-secondary" id="helpBtn">❓ Help</button>
+            <button class="btn-primary" id="saveSettings">
+              💾 Save Settings
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          <p>
+            Made with ❤️ for YouTube creators •
+            <a href="https://tubeboost.help" target="_blank">Help</a> •
+            <a href="https://tubeboost.help/privacy" target="_blank">Privacy</a>
+            •
+            <a href="https://tubeboost.help/terms" target="_blank">Terms</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Success Message -->
+    <div id="successMessage" class="success-message">
+      ✅ Settings saved successfully!
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
