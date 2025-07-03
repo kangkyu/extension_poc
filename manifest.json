@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "Powerful YouTube optimization tools for creators - SEO, analytics, and growth features",
   "permissions": ["activeTab", "storage", "scripting"],
-  "host_permissions": ["https://*.youtube.com/*"],
+  "host_permissions": ["https://studio.youtube.com/*"],
   "action": {
     "default_popup": "popup/popup.html",
     "default_title": "TubeBoost",
